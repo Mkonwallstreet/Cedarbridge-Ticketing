@@ -218,3 +218,34 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ==========================================
+# Terraform - Cedarbridge Infrastructure
+# ==========================================
+
+# Downloaded Terraform providers
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Local variable values (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved Terraform plan files
+*.tfplan
+
+# Additional environment files
+.env.*
+!.env.example
