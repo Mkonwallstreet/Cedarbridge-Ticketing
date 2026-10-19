@@ -249,3 +249,4 @@ override.tf.json
 # Additional environment files
 .env.*
 !.env.example
+*.pyc

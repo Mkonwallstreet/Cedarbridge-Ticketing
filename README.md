@@ -31,3 +31,46 @@ CI/CD: GitHub Actions
 Application Hosting: To be determined
 Database: To be determined
 Identity: To be determined
+
+## Local Application Setup
+
+Cedarbridge is an internal IT ticketing application
+built using Python, FastAPI and HTML.
+
+### Running Locally
+
+1. Navigate to the App directory:
+
+   cd App
+
+2. Create a virtual environment:
+
+   py -m venv .venv
+
+3. Activate the environment:
+
+   .\.venv\Scripts\Activate.ps1
+
+4. Install dependencies:
+
+   python -m pip install -r requirements.txt
+
+5. Start the application:
+
+   python -m uvicorn Main:app --reload
+
+6. Open http://127.0.0.1:8000
+
+### Current Functionality
+
+- Submit IT support tickets
+- Validate required information
+- Generate unique ticket IDs and timestamps
+- Retrieve tickets by their ID
+- Temporarily store tickets in memory
+
+### Limitations
+
+Tickets disappear when the application restarts.
+Azure SQL integration and Entra ID authentication
+have not yet been implemented.
