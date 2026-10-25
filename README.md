@@ -1,86 +1,46 @@
-Cedarbridge — Azure IT Ticketing Platform
 
-Personal Cloud Engineering Project | Azure · Terraform · Python · FastAPI
+# Cedarbridge — Azure IT Ticketing Platform
 
-Project Overview
+**Personal Cloud Engineering Project | Azure · Terraform · Python · FastAPI**
+
+## Project Overview
 
 Cedarbridge is a simulated internal IT support platform designed to replace fragmented employee support requests with a centralized ticketing workflow.
 
-The project focuses on designing, provisioning and eventually operating a secure, cost-conscious Azure-hosted application using Infrastructure as Code and automated deployments.
+The project focuses on designing, provisioning, and eventually operating a secure, cost-conscious Azure-hosted application using Infrastructure as Code and automated deployments.
 
-Business Problem
+## Business Problem
 
-The fictional organization currently relies on emails and Microsoft Teams messages to handle employee IT issues. This creates inconsistent ticket ownership, limited status visibility and no standardized record of issue resolution.
+The fictional organization currently relies on emails and Microsoft Teams messages to handle employee IT issues. This creates inconsistent ticket ownership, limited status visibility, and no standardized record of issue resolution.
 
-Proposed solution: A centralized platform through which employees can submit and track requests while IT administrators can triage, assign, prioritize and resolve tickets.
+**Proposed Solution:** A centralized platform through which employees can submit and track requests while IT administrators can triage, assign, prioritize, and resolve tickets.
 
-Engineering Objectives
+## Engineering Objectives
 
-Build a functional ticket submission and retrieval application.
+- Build a functional ticket submission and retrieval application.
+- Design a secure, scalable architecture using Azure PaaS services.
+- Provision and manage infrastructure using Terraform.
+- Implement CI/CD through GitHub Actions.
+- Apply identity, networking, monitoring, and cost-management principles.
 
-Design a secure, scalable architecture using Azure PaaS services.
+## Current Implementation Status
 
-Provision and manage infrastructure using Terraform.
+| Capability | Status |
+|---|---|
+| Requirements and architecture | Documented |
+| Local FastAPI application | Implemented |
+| Local ticket submission and retrieval | Implemented |
+| Terraform infrastructure definitions | Written and validated |
+| Azure SQL deployment plan | Generated successfully |
+| Azure infrastructure deployment | Pending |
+| Azure SQL application integration | Pending |
+| GitHub Actions CI/CD | In progress |
+| Microsoft Entra authentication | Planned |
 
-Implement CI/CD through GitHub Actions.
+**Project Stage:** Local application proof of concept and Azure infrastructure deployment preparation.
 
-Apply identity, networking, monitoring and cost-management principles.
+The project is being built iteratively, with security, reliability, operational visibility, and cost efficiency considered throughout the design.
 
-Current Implementation Status
-
-Capability
-
-Status
-
-Requirements and architecture
-
-Documented
-
-Local FastAPI application
-
-Implemented
-
-Local ticket submission and retrieval
-
-Implemented
-
-Terraform infrastructure definitions
-
-Written and validated
-
-Azure SQL deployment plan
-
-Generated successfully
-
-Azure infrastructure deployment
-
-Pending
-
-Azure SQL application integration
-
-Pending
-
-GitHub Actions CI/CD
-
-In progress
-
-Microsoft Entra authentication
-
-Planned
-
-Project stage: Local application proof of concept and Azure infrastructure deployment preparation.
-
-The project is being built iteratively, with security, reliability, operational visibility and cost efficiency considered throughout the design.
-
-Technology Stack
-
-Cloud Platform: Microsoft Azure
-Infrastructure as Code: Terraform
-Source Control: GitHub
-CI/CD: GitHub Actions
-Application Hosting: To be determined
-Database: To be determined
-Identity: To be determined
 
 ## Local Application Setup
 
