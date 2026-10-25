@@ -1,36 +1,46 @@
-# Cedarbridge-Ticketing
-Project Overview
 
-A cloud engineering project focused on designing, deploying, securing, and operating an internal IT ticket management system using Microsoft Azure. The solution aims to centralize IT requests, improve ticket ownership and status tracking, provide operational visibility, and support a consistent ticket lifecycle.
+# Cedarbridge — Azure IT Ticketing Platform
 
-Project Objectives
+**Personal Cloud Engineering Project | Azure · Terraform · Python · FastAPI**
 
-Deliver a functioning IT ticketing application.
-Design and deploy supporting Azure infrastructure.
-Implement secure authentication and authorization.
-Use Terraform for Infrastructure as Code.
-Implement automated testing and CI/CD.
-Establish monitoring, logging, and recovery capabilities.
+## Project Overview
 
-Project Documentation
+Cedarbridge is a simulated internal IT support platform designed to replace fragmented employee support requests with a centralized ticketing workflow.
 
-Business Context
-Acceptance Criteria
-ITSM Workflow
-Ticket Data Model
-Architecture Diagram
-Open Decisions
+The project focuses on designing, provisioning, and eventually operating a secure, cost-conscious Azure-hosted application using Infrastructure as Code and automated deployments.
 
+## Business Problem
 
-Technology Stack
+The fictional organization currently relies on emails and Microsoft Teams messages to handle employee IT issues. This creates inconsistent ticket ownership, limited status visibility, and no standardized record of issue resolution.
 
-Cloud Platform: Microsoft Azure
-Infrastructure as Code: Terraform
-Source Control: GitHub
-CI/CD: GitHub Actions
-Application Hosting: To be determined
-Database: To be determined
-Identity: To be determined
+**Proposed Solution:** A centralized platform through which employees can submit and track requests while IT administrators can triage, assign, prioritize, and resolve tickets.
+
+## Engineering Objectives
+
+- Build a functional ticket submission and retrieval application.
+- Design a secure, scalable architecture using Azure PaaS services.
+- Provision and manage infrastructure using Terraform.
+- Implement CI/CD through GitHub Actions.
+- Apply identity, networking, monitoring, and cost-management principles.
+
+## Current Implementation Status
+
+| Capability | Status |
+|---|---|
+| Requirements and architecture | Documented |
+| Local FastAPI application | Implemented |
+| Local ticket submission and retrieval | Implemented |
+| Terraform infrastructure definitions | Written and validated |
+| Azure SQL deployment plan | Generated successfully |
+| Azure infrastructure deployment | Pending |
+| Azure SQL application integration | Pending |
+| GitHub Actions CI/CD | In progress |
+| Microsoft Entra authentication | Planned |
+
+**Project Stage:** Local application proof of concept and Azure infrastructure deployment preparation.
+
+The project is being built iteratively, with security, reliability, operational visibility, and cost efficiency considered throughout the design.
+
 
 ## Local Application Setup
 
