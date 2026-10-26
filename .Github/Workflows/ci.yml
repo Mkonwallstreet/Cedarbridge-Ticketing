@@ -1,0 +1,45 @@
+
+name: Cedarbridge CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python-validation:
+    name: Python Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check Python syntax
+        run: python -m compileall -q App
+
+  terraform-validation:
+    name: Terraform Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_version: "1.16.5"
+
+      - name: Check Terraform formatting
+        run: terraform -chdir=Infra fmt -check
+
+      - name: Initialize Terraform providers
+        run: terraform -chdir=Infra init -backend=false -input=false
+
+      - name: Validate Terraform
+        run: terraform -chdir=Infra validate -no-color
