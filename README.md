@@ -28,7 +28,7 @@ The fictional organization currently relies on emails and Microsoft Teams messag
 
 The diagram below compares Cedarbridge's current local proof of concept with the proposed Azure cloud architecture.
 
-![Cedarbridge Architecture Diagram](Docs/Images/Cedarbridge%20Ticketing%20Platform%20Architecture.png)
+![Cedarbridge Architecture Diagram](Docs/Images/Cedarbridge%20Platform%20Architecture.png)
 
 
 ## Current Implementation Status
