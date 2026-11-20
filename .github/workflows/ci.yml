@@ -43,3 +43,14 @@ jobs:
 
       - name: Validate Terraform
         run: terraform -chdir=Infra validate -no-color
+docker-build:
+    name: Docker Build Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Cedarbridge Docker image
+        run: docker build -t cedarbridge-ticketing:test ./App
+      
